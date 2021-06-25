@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    position: fixed;
+    right: 70px;
+    bottom: 20px;
+}
+
+#top a i {
+    color: orange;
+    font-size: 1.8em;
+}
+
+
+h1{
+    border-top: black 7px solid ;
+    border-bottom: black 7px solid;
+    margin-bottom: -40px;
+    text-align: center;
+    font-size: 120px;
+    grid-column: 1 / 3;
+    line-height: 1em;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange; 
+    background: url(img/Sans\ titre.jpg);
+    background-repeat: no-repeat;
+    background-size: 1550px;
+    background-position: 50% 50%;
+    color: white;
+}
+#Intro{
+    grid-column: 1 / 3;
+    width: 100%;
+    
+}
+nav{
+    border-bottom: solid 4px orange;
+    background-color: black;
+    text-align: center;
+    word-spacing: 50px;
+    padding-bottom: 10px; 
+}
+
+a{
+    text-decoration: underline orange;
+    font-size: 35px;
+    color: orange;
+}
+nav a{
+    color: orange;
+    font-size: 35px;
+    transition-duration: 0.5s;
+}
+
+.grace{
+    display: grid;
+    justify-content: center;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    background: linear-gradient(rgba(255, 255, 0, 0.644), orange);
+}
+.sol{
+   padding: 20px 30px; 
+    background-color: blanchedalmond;
+    position: relative;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.place{
+    justify-content: center;
+    display: flex;
+}
+
+#Jeunesse{
+    grid-column: 1 / 3;
+    justify-content: center;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange;
+}
+
+
+#Carrière{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange;
+}   
+.Jeunes{
+    display: flex;
+    justify-content: center;
+}
+.dis{
+    display: flex;
+    justify-content: center;
+}
+
+.aligner{
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 40px;
+}
+
+.alignerr{
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 40px;
+    text-decoration: orange underline;
+}
+
+
+.align{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+   
+}
+
+.ali{
+     margin-bottom: 20px;
+}
+ 
+.aligne{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.hoper{
+    text-align: center;
+    font-size: 35px;
+    list-style-type: circle;
+}
+
+
+
+.Navy{
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 3;
+}
+
+#DistinctionHommages{
+    grid-column: 1 / 3;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange;
+} 
+#Anecdote{
+    grid-column: 1 / 3;
+    border-right: orange 4px solid;
+    border-left: solid 4px orange;
+}
+
+ul{
+    text-align: center;
+    font-size: 35px;
+}
+.right {
+    left: 50%;
+}
+
+
+.right::after {
+    left: -12px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      
+      /* Make sure that all arrows are pointing leftwards */
+      .timeline-item::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+      /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+      }
+      
+      /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white
+}
+
+table{
+    border-style: double;
+    border: 5px solid;
+    width: 100%;
+    color: white;
+    border-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image: url(img/usa.jpg);
+}
+
+td{
+    text-align: center;
+    font-size: 35px;     
+    color: white; 
+}
+
+right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.left {
+    left: 0;
+}
+
+.timeline {
+    font-size: 35px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.timeline-enfant  {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+img{
+    border-radius: 2%;
+}
+
+.head{
+    position: relative;
+    align-items: left;
+    color: black;
+    font-weight: 400;
+    background-color: cyan;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.head h2{
+    line-height: 15px;
+}
+
+.num{
+    display: inline;
+    float: left;
+    line-height: 30px;
+    font-weight: 600;
+    margin-right: 15px;
+    background: rgba(0, 0, 0, 0.384);
+}
+
+span {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.timeline-enfant::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    line-height: 60px;
+    color: orange;
+    position: absolute;
+    top: 0; left: 0;
+}
+.grace {
+    background: url(https://media.giphy.com/media/sFMDqop2ku4M0/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3{
+    text-align: center;
+    font-size: 45px;
+}
+
+footer{
+    border-top: orange solid 4px;
+    text-align: center;
+    grid-column: 1 / 3;
+    background: black;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
